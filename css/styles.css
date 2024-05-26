@@ -1,0 +1,247 @@
+/* Custom styles for the project */
+
+/* Colors */
+:root {
+    --primary-color: #C0392B;
+    --secondary-color: #8E5E34;
+    --background-color: #FFF5E1;
+    --accent-color: #E6CBA8;
+    --text-color: #4A2C19;
+    --link-color: #E27D60;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header .navbar-brand img {
+    height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--link-color);
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.input-group .btn {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social-media, footer .contact-info {
+    margin: 0.5rem 0;
+}
+
+/* Full-cover carousel adjustments */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+    height: 100vh;
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-item .btn-outline-light:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Section Headers */
+h1 {
+    color: var(--background-color);
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: 'Lobster', cursive;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-color);
+}
+
+.card .card-title {
+    color: var(--secondary-color);
+}
+
+.card .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.card .btn-primary:hover {
+    background-color: var(--link-color);
+}
+
+/* About Us Section */
+#about {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Latest Reviews Section */
+#latest-reviews .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#latest-reviews .card-body .d-flex {
+    align-items: center;
+}
+
+#latest-reviews .card-body .d-flex img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Reviews Page */
+.card .star-rating .fa-star {
+    color: #8E5E34; /* Gold color for filled stars */
+}
+
+.card .star-rating .fa-star.empty {
+    color: #e4e5e9; /* Grey color for empty stars */
+}
+
+@media (max-width: 767px) {
+  .card .d-flex.position-absolute {
+    position: static !important;
+    margin-top: 1rem;
+  }
+
+  .card .col-4, .card .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card .col-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* FAQ and Contact Form */
+#faq .accordion-button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+#faq .accordion-body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#contact-form form {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.submit {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.submit:hover {
+    background-color: var(--link-color);
+}
+
+/* Reservation Form Styles */
+#reservation-form form {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Restaurant Details Styles */
+#restaurant-details img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px; /* More rounded edges */
+}
+
+#restaurant-details {
+    text-align: center;
+}
+
+.nav-tabs {
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    font-weight: bold;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.tab-content {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}

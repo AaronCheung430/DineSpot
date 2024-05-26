@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DineSpot - Discover the best restaurants in town</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto & Lobster -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap" />
+  <!-- MDBootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFF5E1;">
+    <div class="container-md">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logoWithText.png" alt="DineSpot Logo" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="text-center bg-image" style="background-image: url('img/heroImage.jpg'); height: 100vh;">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Discover the best restaurants in town</h1>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="(Coming Soon!) Find restaurants by name, cuisine, or location" disabled>
+              <button class="btn btn-primary" type="button" disabled>Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured restaurants -->
+    <section id="featured-restaurants" class="container-fluid px-0">
+      <h2 class="text-center my-5">Featured Restaurants</h2>
+      <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+        </div>
+
+        <div class="carousel-inner">
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Latest reviews -->
+    <section id="latest-reviews" class="container my-5">
+      <h2 class="text-center pb-3">Latest Reviews</h2>
+      <div class="row" id="review-listings">
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about" class="container my-5">
+      <h2 class="text-center">About Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/logoWithText.png" class="img-fluid rounded" alt="About Us Image">
+        </div>
+        <div class="col-md-6">
+          <p>DineSpot is a premier platform for discovering and booking reservations at the best local restaurants. Our mission is to make dining out a delightful experience by providing detailed restaurant information, user reviews, and a seamless reservation process.</p>
+          <p>We are passionate about food and aim to connect diners with the best culinary experiences in town. Whether you’re looking for a cozy café, a fancy restaurant, or anything in between, DineSpot has got you covered.</p>
+          <p>Join us in exploring the vibrant food scene and making every meal a memorable one!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container-md">
+      <div class="social-media mb-3">
+        <a href="https://www.facebook.com" target="_blank" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="text-white">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="contact-info">
+        <p>Contact us at: <a href="mailto:info@dinespot.com" class="text-white">info@dinespot.com</a></p>
+        <p>&copy; 2024 DineSpot. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MDBootstrap JS -->
+  <script src="js/mdb.min.js"></script>
+  <!-- Data -->
+  <script type="module" src="js/data.js"></script>
+  <!-- Scripts -->
+  <script type="module" src="js/index-scripts.js"></script>
+</body>
+
+</html>

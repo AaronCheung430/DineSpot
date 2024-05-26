@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DineSpot</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto & Lobster -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap" />
+  <!-- MDBootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFF5E1;">
+    <div class="container-md">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logoWithText.png" alt="DineSpot Logo" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5" style="padding-top: 50px;">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <h3>Frequently Asked Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading1">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+              What is DineSpot?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-mdb-parent="#faqAccordion">
+            <div class="accordion-body">
+              DineSpot is a platform for discovering and booking reservations at the best local restaurants.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading2">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              How do I make a reservation?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-mdb-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can make a reservation by visiting the restaurant's profile page.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading3">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+              Can I submit a review for a restaurant?
+            </button>
+          </h2>
+          <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-mdb-parent="#faqAccordion">
+            <div class="accordion-body">
+              You will soon be able to. We are currently still working hard on this function. Thank you for your patience!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="mt-5">
+      <h3>Contact Us</h3>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="contactName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="contactName" required>
+        </div>
+        <div class="mb-3">
+          <label for="contactEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="contactEmail" required>
+        </div>
+        <div class="mb-3">
+          <label for="contactSubject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="contactSubject" required>
+        </div>
+        <div class="mb-3">
+          <label for="contactMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container-md">
+      <div class="social-media mb-3">
+        <a href="https://www.facebook.com" target="_blank" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="text-white">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="contact-info">
+        <p>Contact us at: <a href="mailto:info@dinespot.com" class="text-white">info@dinespot.com</a></p>
+        <p>&copy; 2024 DineSpot. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MDBootstrap JS -->
+  <script src="js/mdb.min.js"></script>
+
+  <!-- Script when submit button is clicked -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for contacting us, we will be in touch soon.');
+      this.reset();
+    });
+  </script>
+</body>
+
+</html>
