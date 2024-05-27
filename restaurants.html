@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurants - DineSpot</title>
+  <!-- Favicon for icon for the website -->
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -21,13 +22,16 @@
   <!-- Navbar -->
   <header class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFF5E1;">
     <div class="container-md">
+      <!-- Navbar logo, with button to be able to click on -->
       <a class="navbar-brand" href="index.html">
         <img src="img/logoWithText.png" alt="DineSpot Logo" height="40">
       </a>
+      <!-- Navbar toggler, only will show when user is on mobile view -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
+      <!-- Navbar item with each directs to different pages -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -54,9 +58,10 @@
     <!-- Page Header -->
     <section class="container my-5" style="padding-top: 50px;">
       <h2 class="text-center" style="padding-bottom: 10px;">Restaurants</h2>
-      <!-- Filter Options -->
+      <!-- Filter options, all of these are disabled, as no such functionality implemented, as it will preform better with back-end -->
       <div class="row mb-4">
         <div class="col-12 col-md-3 mb-2 mb-md-0">
+          <!-- Using Dropdown menu to allow user to choose and filter -->
           <select class="form-select" aria-label="Cuisine" disabled>
             <option selected>Select Cuisine</option>
             <option value="1">British</option>
@@ -85,12 +90,13 @@
             <option value="5">5 Stars</option>
           </select>
         </div>
+        <!-- Search bar allowing user to type in the location -->
         <div class="col-12 col-md-3 mb-2 mb-md-0">
           <input type="text" class="form-control" placeholder="Location" disabled>
         </div>
       </div>
 
-      <!-- Showing all restaurants -->
+      <!-- Showing all restaurants by allowing script to generate html -->
       <div class="row" id="restaurant-listings">
       </div>
     </section>
@@ -98,6 +104,7 @@
 
   <footer class="bg-dark text-white text-center py-4">
     <div class="container-md">
+      <!-- Different social media links -->
       <div class="social-media mb-3">
         <a href="https://www.facebook.com" target="_blank" class="text-white me-4">
           <i class="fab fa-facebook-f"></i>
@@ -112,6 +119,7 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
+      <!-- Contact info -->
       <div class="contact-info">
         <p>Contact us at: <a href="mailto:info@dinespot.com" class="text-white">info@dinespot.com</a></p>
         <p>&copy; 2024 DineSpot. All rights reserved.</p>

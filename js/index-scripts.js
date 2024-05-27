@@ -1,17 +1,22 @@
-// index-scripts.js
-
+// Getting data from data.js for both restaurants and reviews
 import { restaurants, reviews } from './data.js';
 
-// Function to generate restaurant cards for the carousel
+// Function to generate restaurant slides for the carousel
 function generateCarouselItems() {
-  const carouselInner = document.querySelector('.carousel-inner');
-  const carouselIndicators = document.querySelector('.carousel-indicators');
+    // Get the element from the html
+    const carouselInner = document.querySelector('.carousel-inner');
+    const carouselIndicators = document.querySelector('.carousel-indicators');
 
-  restaurants.slice(0, 3).forEach((restaurant, index) => {
-    const carouselItem = document.createElement('div');
-    carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-    carouselItem.style.backgroundImage = `url('${restaurant.image}')`;
-    carouselItem.innerHTML = `
+    // Repeat the following code for 3 times, as only showing the first 3 restaurants
+    restaurants.slice(0, 3).forEach((restaurant, index) => {
+        // Create div
+        const carouselItem = document.createElement('div');
+        // Add class with conditional operator to determine which classes should be applied
+        carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+        // Get the background image from the data stored in the dictionary
+        carouselItem.style.backgroundImage = `url('${restaurant.image}')`;
+        // Add HTML code, with restaurant's name, description, as well as button to direct to restaurant's page
+        carouselItem.innerHTML = `
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white text-center">
@@ -22,24 +27,35 @@ function generateCarouselItems() {
         </div>
       </div>
     `;
-    carouselInner.appendChild(carouselItem);
+        // Append the whole HTML code that was created above to the selected element of the HTML file
+        carouselInner.appendChild(carouselItem);
 
-    const indicator = document.createElement('button');
-    indicator.type = 'button';
-    indicator.setAttribute('data-mdb-target', '#introCarousel');
-    indicator.setAttribute('data-mdb-slide-to', index);
-    indicator.className = index === 0 ? 'active' : '';
-    carouselIndicators.appendChild(indicator);
-  });
+        // Create new element of button for that slide
+        const indicator = document.createElement('button');
+        indicator.type = 'button';
+        // Set target and slide index for which slide should the button navigate to
+        indicator.setAttribute('data-mdb-target', '#introCarousel');
+        indicator.setAttribute('data-mdb-slide-to', index);
+        // Set active class if it is showing this slide
+        indicator.className = index === 0 ? 'active' : '';
+
+        // Append the HTML code to the selected element of the HTML file
+        carouselIndicators.appendChild(indicator);
+    });
 }
 
+// Function to generate reviews cards
 function generateReviewCards() {
-  const reviewContainer = document.getElementById('review-listings');
-  const latestReviews = reviews.slice(0, 3); // Get the latest three reviews
-  latestReviews.forEach(review => {
-    const card = document.createElement('div');
-    card.className = 'col-md-4 mb-4';
-    card.innerHTML = `
+    // Get element from html
+    const reviewContainer = document.getElementById('review-listings');
+    // Only get the latest three reviews and store a new variable
+    const latestReviews = reviews.slice(0, 3);
+    // Loop through the 3 reviews and create the html code for them
+    // By creating div, apply classes and create html code to show details of review, such as image, content, author etc.
+    latestReviews.forEach(review => {
+        const card = document.createElement('div');
+        card.className = 'col-md-4 mb-4';
+        card.innerHTML = `
       <div class="card h-100">
         <img src="${review.image}" class="card-img-top" alt="Review Image">
         <div class="card-body">
@@ -56,9 +72,12 @@ function generateReviewCards() {
         </div>
       </div>
     `;
-    reviewContainer.appendChild(card);
-  });
+
+        // Append the whole HTML code that was created above to the selected element of the HTML file
+        reviewContainer.appendChild(card);
+    });
 }
 
+// Call the functions above to generate the HTML
 generateCarouselItems();
 generateReviewCards();

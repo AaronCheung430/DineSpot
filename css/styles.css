@@ -1,6 +1,6 @@
 /* Custom styles for the project */
 
-/* Colors */
+/* Colours */
 :root {
     --primary-color: #C0392B;
     --secondary-color: #8E5E34;
@@ -10,7 +10,7 @@
     --link-color: #E27D60;
 }
 
-/* General Styles */
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -19,6 +19,7 @@ body {
     color: var(--text-color);
 }
 
+/* For Navbar */
 header .navbar-brand img {
     height: 40px;
 }
@@ -31,6 +32,7 @@ header .navbar-brand img {
     color: var(--link-color);
 }
 
+/* For Hero */
 #hero {
     position: relative;
     text-align: center;
@@ -46,6 +48,7 @@ header .navbar-brand img {
     background-color: var(--primary-color);
 }
 
+/* For Footer */
 footer {
     background-color: var(--secondary-color);
     color: var(--background-color);
@@ -81,7 +84,7 @@ footer .social-media, footer .contact-info {
     border-color: var(--primary-color);
 }
 
-/* Section Headers */
+/* Headings */
 h1 {
     color: var(--background-color);
     font-family: 'Lobster', cursive;
@@ -92,7 +95,7 @@ h2 {
     font-family: 'Lobster', cursive;
 }
 
-/* Card Styles */
+/* Restaurant/ review card styles */
 .card {
     background-color: var(--accent-color);
     border: none;
@@ -112,7 +115,7 @@ h2 {
     background-color: var(--link-color);
 }
 
-/* About Us Section */
+/* About us */
 #about {
     background-color: var(--accent-color);
     padding: 2rem;
@@ -124,7 +127,7 @@ h2 {
     border-radius: 10px;
 }
 
-/* Latest Reviews Section */
+/* Latest reviews */
 #latest-reviews .card-img-top {
     height: 200px;
     object-fit: cover;
@@ -139,13 +142,13 @@ h2 {
     margin-right: 10px;
 }
 
-/* Reviews Page */
+/* Reviews page */
 .card .star-rating .fa-star {
-    color: #8E5E34; /* Gold color for filled stars */
+    color: #8E5E34;
 }
 
 .card .star-rating .fa-star.empty {
-    color: #e4e5e9; /* Grey color for empty stars */
+    color: #e4e5e9;
 }
 
 @media (max-width: 767px) {
@@ -164,7 +167,7 @@ h2 {
   }
 }
 
-/* FAQ and Contact Form */
+/* FAQ and contact form */
 #faq .accordion-button {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -196,25 +199,26 @@ h2 {
     background-color: var(--link-color);
 }
 
-/* Reservation Form Styles */
+/* Reservation form styles */
 #reservation-form form {
     background-color: var(--accent-color);
     padding: 2rem;
     border-radius: 10px;
 }
 
-/* Restaurant Details Styles */
+/* Restaurant details page */
 #restaurant-details img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px; /* More rounded edges */
+    border-radius: 20px;
 }
 
 #restaurant-details {
     text-align: center;
 }
 
+/* Tabs for restaurant's menu, location and opening hours */
 .nav-tabs {
     justify-content: center;
     border-bottom: 2px solid var(--primary-color);
@@ -241,6 +245,7 @@ h2 {
     color: var(--text-color);
 }
 
+/* To remove bullpoint's dot from list */
 .list-unstyled {
     padding-left: 0;
     list-style: none;
